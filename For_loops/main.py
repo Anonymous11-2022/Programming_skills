@@ -12,11 +12,11 @@ __human_name__ = "for"
 
 print('\n')
 
-# Question 1 = shortest country names
+# Exercise 1 = shortest country names
 
 def shortest_names (coutries: list) -> list:
     
-    print('Answer to question 1:\n')
+    print('Elaboration exercise 1:\n')
     
     shortest_country_name = min(coutries, key=len)
     print(f'{shortest_country_name} = the country name with the fewest characters.\n')
@@ -35,11 +35,11 @@ def shortest_names (coutries: list) -> list:
     return shortest_country_list
 
 
-# Question 2 = most vowels
+# Exercise 2 = most vowels
 
 def most_vowels (countries: list) -> list:
 
-    print('Answer to question 2:\n')
+    print('Elaboration exercise 2:\n')
 
     vowels = 'aeiou' + 'AEIOU'
 
@@ -73,11 +73,11 @@ def most_vowels (countries: list) -> list:
     return ranking_top_three
 
 
-# Question 3 = form the alfabet
+# Exercise 3 = form the alfabet
 
 def alphabet_set(countries: list) -> list:
 
-    print('Answer to question 3:\n')
+    print('Elaboration exercise 3:\n')
 
     alphabet = list('abcdefghijklmnopqrstuvwxyz')
         
@@ -101,7 +101,7 @@ def alphabet_set(countries: list) -> list:
                     used_countries.append(country)
 
     print('\n')
-    print('Below are the countries which I used to form the alphabet:\n')
+    print('Below are the countries which I used to form the alphabet with:\n')
     
     return used_countries
 
@@ -119,5 +119,3 @@ if __name__ == "__main__":
     print('\n')
     print(alphabet_set(countries))
     print('\n')
-
-# TEST
