@@ -6,13 +6,16 @@ tests it runs. """
 __winc_id__ = "c545bc87620d4ced81cbddb8a90b4a51"
 __human_name__ = "for"
 
-
-"""" I always try to write my code as universally as possible. This allows my code to be used for multiple situations / requests."""
-
+# Exercise: "Experiment with countries" (using functions, lists and for loops).
 
 print('\n')
 
-# Exercise 1 = shortest country names
+'''
+For all 3 exercises shown below, I used the countries list from the 'countries.json' file.
+'''
+
+
+# Question 1 = Write a function that returns all the countries with the shortest country names / fewest characters.
 
 def shortest_names (coutries: list) -> list:
     
@@ -35,7 +38,7 @@ def shortest_names (coutries: list) -> list:
     return shortest_country_list
 
 
-# Exercise 2 = most vowels
+# Question 2 = Write a function that returns a list that contains a top 3 of countries with the most vowels.
 
 def most_vowels (countries: list) -> list:
 
@@ -73,7 +76,7 @@ def most_vowels (countries: list) -> list:
     return ranking_top_three
 
 
-# Exercise 3 = form the alfabet
+# Question 3 = Write a function that returns a number of countries which can be used to form the alphabet.
 
 def alphabet_set(countries: list) -> list:
 

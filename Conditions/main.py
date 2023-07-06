@@ -2,9 +2,12 @@
 __winc_id__ = '25596924dffe436da9034d43d0af6791'
 __human_name__ = 'conditions'
 
-'''This function helps a farmer to decide what to do:
+# Exercise: "Help the farmer" (using conditions and operators).
+
+'''
+The function shown below helps a farmer to decide what to do:
 - during what season;
-- during what time of day;
+- during what time of the day;
 - with the location of the cows;
 - regarding mowing the grass
 - with the slurry tank
@@ -54,19 +57,24 @@ def farm_action(
 
 print(farm_action('sunny','day', True, 'pasture', 'spring', False, True,))
 
-print(farm_action('rainy', "night", False, 'pasture', 'spring', False, True))
+'''
+Below you can also select several scenario’s to check what the
+output will be after uncommenting one of the lines / scenario’s and run this code.
+'''
 
-print(farm_action('rainy', "night", True, 'cowshed', 'spring', False, True))
+# print(farm_action('rainy', "night", False, 'pasture', 'spring', False, True))
 
-print(farm_action('neutral', 'night', False, 'cowshed', 'spring', True, True))
+# print(farm_action('rainy', "night", True, 'cowshed', 'spring', False, True))
 
-print(farm_action('sunny', 'day', False, 'cowshed', 'spring', False, True))
+# print(farm_action('neutral', 'night', False, 'cowshed', 'spring', True, True))
 
-print(farm_action('sunny', 'day', False, 'cowshed', 'spring', False, False))
+# print(farm_action('sunny', 'day', False, 'cowshed', 'spring', False, True))
 
-print(farm_action('sunny','day', True, 'pasture', 'spring', False, True))
+# print(farm_action('sunny', 'day', False, 'cowshed', 'spring', False, False))
 
-end = 'The output of the \'farm action\' function ends above.\n'
+# print(farm_action('sunny','day', True, 'pasture', 'spring', False, True))
+
+end = 'The output of the \'farm action\' function ends above this line.\n'
 
 print(end)
 
