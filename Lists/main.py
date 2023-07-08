@@ -21,7 +21,7 @@ def alphabetical_order(movies: list) -> list:
     print('\n')
     print('Elaboration question 1:\n')
 
-    print('Below is a sorted list of all the movies John Williams won a Golden Globe for, for composing the music for that movie:\n')
+    print('Below is a sorted list of all the movies for which John Williams composed the music for and also won a Golden Globe for:\n')
 
     movie_list.sort()
 
@@ -35,9 +35,8 @@ print('\n')
 
 gg_movies = ['Jaws', 'Star Wars: Episode iv -- A New Hope', 'E.T. The Extra-Terrestrial', 'Memoirs of a Geisha']
 
-'''
-gg = golden globe
-'''
+# gg = golden globe
+
 
 def won_golden_globe(movies: str) -> bool:
 
@@ -45,51 +44,68 @@ def won_golden_globe(movies: str) -> bool:
 
     print('Below you can do a check if the composed music in a movie has won a Golden Globe by John Williams:\n')
 
-    gg_movies_lower = [gg_movies.lower() for gg_movies in gg_movies]
+    gg_movies_lower = [movie.lower() for movie in gg_movies]
 
     if movies.lower() in gg_movies_lower:
-        print(movies, "=", True) # This is a double check to see if the function works.
+        print(movies, '=', True) # This is a double check to see if the function works.
         return True
     
     else:
-        print(movies, "=", False)
+        print(movies, '=', False)
         print('\n')
         return False
         
 print(won_golden_globe('Jaws'))
-print('\n')
+# print('\n')
 
 
-# Question 3 = Write a function that returns a tidy list which only contains Golden Globe movie music composed by John Williams.
+# Question 3 = Write a function that returns a tidy list which only contains Golden Globe movie music composed by John Williams without using a for loop.\
+# But I created 2 tidy lists instead: 1 for John Williams and 1 for TOTO.😉
 
-tidy_list = ['Jaws', 'Star Wars: Episode iv -- A New Hope', 'E.T. The Extra-Terrestrial', 'Memoirs of a Geisha', 'Fahrenheit', 'The Seventh One', 'Toto XX', 'Falling in Between', 'Toto XIV', 'Old Is New']
+tidy_list_John = ['Jaws', 'Star Wars: Episode iv -- A New Hope', 'E.T. The Extra-Terrestrial', 'Memoirs of a Geisha', 'Fahrenheit',\
+             'The Seventh One', 'Toto XX', 'Falling in Between', 'Toto XIV', 'Old Is New']
 
-def remove_toto_albums(movies) -> list:
+tidy_list_TOTO = []
+
+
+def remove_toto_albums(tidy_list_John, tidy_list_TOTO) -> list:
     
     print('Elaboration question 3:\n')
 
-    print('Below you can see the tidied up list that only contains Golden Globe movie music composed by John Williams:\n')
+    print('Even though the question was to write a function for 1 tidy list, I wrote a function that returns 2 tidy lists instead😉: 1 for John Williams and 1 for TOTO:\n')
 
-    if "Fahrenheit" in tidy_list:
-        tidy_list.remove("Fahrenheit")
+    if 'Fahrenheit' in tidy_list_John:
+        tidy_list_John.remove('Fahrenheit')
+        tidy_list_TOTO.append('Fahrenheit')
     
-    if "The Seventh One" in tidy_list:
-        tidy_list.remove("The Seventh One")
+    if 'The Seventh One' in tidy_list_John:
+        tidy_list_John.remove('The Seventh One')
+        tidy_list_TOTO.append('The Seventh One')
 
-    if "Toto XX" in tidy_list:
-        tidy_list.remove("Toto XX")
+    if 'Toto XX' in tidy_list_John:
+        tidy_list_John.remove('Toto XX')
+        tidy_list_TOTO.append('Toto XX')
 
-    if "Falling in Between" in tidy_list:
-        tidy_list.remove("Falling in Between")
+    if 'Falling in Between' in tidy_list_John:
+        tidy_list_John.remove('Falling in Between')
+        tidy_list_TOTO.append('Falling in Between')
 
-    if "Toto XIV" in tidy_list:
-        tidy_list.remove("Toto XIV")
+    if 'Toto XIV' in tidy_list_John:
+        tidy_list_John.remove('Toto XIV')
+        tidy_list_TOTO.append('Toto XIV')
 
-    if "Old Is New" in tidy_list:
-        tidy_list.remove("Old Is New")
+    if 'Old Is New' in tidy_list_John:
+        tidy_list_John.remove('Old Is New')
+        tidy_list_TOTO.append('Old Is New')
     
-    return movies
+    return tidy_list_John, tidy_list_TOTO
 
 print('\n')
-print(remove_toto_albums(tidy_list))
-print('\n')
+
+tidy_lists = remove_toto_albums(tidy_list_John, tidy_list_TOTO)
+tidy_list_John = tidy_lists[0]
+tidy_list_TOTO = tidy_lists[1]
+
+print('- Tidy list John Williams =', tidy_list_John, '\n')
+# print('\n')
+print('- Tidy list TOTO =',tidy_list_TOTO, '\n')

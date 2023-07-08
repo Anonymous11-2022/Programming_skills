@@ -19,7 +19,7 @@ For all 3 exercises shown below, I used the countries list from the 'countries.j
 
 def shortest_names (coutries: list) -> list:
     
-    print('Elaboration exercise 1:\n')
+    print('Elaboration question 1:\n')
     
     shortest_country_name = min(coutries, key=len)
     print(f'{shortest_country_name} = the country name with the fewest characters.\n')
@@ -42,7 +42,7 @@ def shortest_names (coutries: list) -> list:
 
 def most_vowels (countries: list) -> list:
 
-    print('Elaboration exercise 2:\n')
+    print('Elaboration question 2:\n')
 
     vowels = 'aeiou' + 'AEIOU'
 
@@ -80,7 +80,7 @@ def most_vowels (countries: list) -> list:
 
 def alphabet_set(countries: list) -> list:
 
-    print('Elaboration exercise 3:\n')
+    print('Elaboration question 3:\n')
 
     alphabet = list('abcdefghijklmnopqrstuvwxyz')
         

@@ -24,7 +24,8 @@ def farm_action(
         season, # (winter, spring, summer, fall)
         slurry_tank, # (Full = True, Not full = False)
         grass_status) -> str: # (Long = True, Short = False)
-    
+
+
     # Take cows to cowshed
     if location_of_the_cows == 'pasture' and (time_of_day == 'night' or weather == 'rainy'):
          action = 'Take cows to the cowshed.\n'
@@ -72,10 +73,8 @@ output will be after uncommenting one of the lines / scenario’s and run this c
 
 # print(farm_action('sunny', 'day', False, 'cowshed', 'spring', False, False))
 
-# print(farm_action('sunny','day', True, 'pasture', 'spring', False, True))
+End = 'The output of the \'farm action\' function ends above this line.\n'
 
-end = 'The output of the \'farm action\' function ends above this line.\n'
-
-print(end)
+print(End)
 
 

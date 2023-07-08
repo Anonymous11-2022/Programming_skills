@@ -2,67 +2,122 @@
 __winc_id__ = '71dd124b4a6e4d268f5973db521394ee'
 __human_name__ = 'strings'
 
-# Add your code after this line
+# Exercise: "Soccer on a string"😉 (using operators, casting and strings).
 
+'''
+For this exercise I had to use the following website to find the necessary info:
+
+- https://en.wikipedia.org/wiki/UEFA_Euro_1988_final
+
+'''
+
+# Part 1 - question 1 = Create a variable for every player that scored and a variable for each minute of the match that a goal was scored in.
+
+scorer1 = '- Ruud Gullit'
+scorer2 = '- Marco van Basten'
+
+
+# Part 1 - question 2 = Create a variable for each minute of the match that a goal was scored in.
+
+goal_0 = 32
+goal_1 = 54
+
+
+# Part 1 - question 3 = Create a variable that stores a string that reports on who scored when \
+# using the '+' operator to concatenate the variables and cast those whose datatypes are numbers into strings.
+
+scorers = scorer1 + ' ' + str(goal_0) + ', ' + scorer2 + ' ' + str(goal_1)
+
+
+# Part 1 - question 4 = Create a variable which will store a single string of information about who scored when in the format.
+
+report = (F'{scorer1} scored in the {goal_0}nd minute\n{scorer2} scored in the {goal_1}th minute')
+
+
+# Part 2 - question 1 = Choose a player's name and store it as a string.
+
+player = 'Frank Rijkaard'
+
+
+# Part 2 - question 2 = Use 'slicing' and the '.find' method to isolate and store the player's first name.
+
+first_name = player[0:player.find(" ")]
+
+
+# Part 2 - question 3 = Find out the length of the surname using len().
+
+last_name_len = len(player[player.find(" "):] [:-1])
+
+
+# Part 2 - question 4 = Isolate and store the player's initial and surname.
+
+name_short = player[0:1] + '.' + ' ' +  player[player.find(" ")+1:]
+
+
+# Part 2 - question 5 =  Create a chant (for when the player is going to score a goal)\
+# containing the player’s first name and an exclamation mark (!) x-times,\
+# where ‘x’ is the number of characters in the player’s first name.\
+# And make sure the last character of this string is not a space!
+
+chant = (F'{first_name}! ' * len(first_name)) [:-1]
+
+
+# Part 2 - question 6 = Create a boolean check to make sure that the last character of the chant is not a space.
+
+good_chant = (chant[-1] != ' ')
+
+
+print('\n')
 # Part 1
-scorer1 = 'Ruud Gullit' # = Vraag 1
-scorer2 = 'Marco van Basten' # = Vraag 1
-
-goal_0 = 32 # = Vraag 2
-goal_1 = 54 # = Vraag 2
-
-
-scorers = scorer1 + ' ' + str(goal_0) + ', ' + scorer2 + ' ' + str(goal_1) # = Vraag 3
-
-report = (F'{scorer1} scored in the {goal_0}nd minute\n{scorer2} scored in the {goal_1}th minute') # = Vraag 4
-
-# Part 2
-player = 'Frank Rijkaard' # = Vraag 1
-
-first_name = player[0:player.find(" ")] # = Vraag 2: slicen + find
-
-# first_name_2 = player[0:player.find(" ")] [-4:] # = Vraag 2: slicen + find LET OP!!! Deze string heb ik uitgecommentarieerd om te oefenen met de index waarbij je een min getal gebruikt vóór de dubbele punt.
-
-last_name_len = len(player[player.find(" "):] [:-1]) # = Vraag 3: find + slicen + len
-
-name_short = player[0:1] + '.' + ' ' +  player[player.find(" ")+1:] # = Vraag 4
-
-chant = (F'{first_name}! ' * len(first_name)) [:-1] # = Vraag 5
-
-# chant_2 = ((first_name + '!' + ' ') * len(first_name)) [:-1] # = Vraag 5 --> LET OP!!! Op deze manier is het ook mogelijk.
-
-# chant_3 = (F'{first_name}! '* 5) [:-1] # = Vraag 5: Met deze OUDE code wordt het aantal chants niet aangepast aan het aantal karakters van de voornaam.
-
-good_chant = (chant[-1] != ' ') # = Vraag 6
-
-
-# Part 1
-print(scorer1) # Part 1: vraag 1
+print('Elaboration part 1 - question 1:\n')
+print('Below are the players I selected from the UEFA Euro 1988 final:\n')
+print(scorer1)
+print(scorer2)
 print('\n')
-print(scorer2) # Part 1: vraag 1
+
+print('Elaboration part 1 - question 2:\n')
+print('Below are the minutes of the match that a goal was scored in:\n')
+print(goal_0)
+print(goal_1)
 print('\n')
-print(goal_0) # Part 1: vraag 2
+
+print('Elaboration part 1 - question 3:\n')
+print('Below is a string containing the name of the player followed by the minute the player scored during the match:\n')
+print(scorers)
 print('\n')
-print(goal_1) # Part 1: vraag 2
-print('\n')
-print(scorers) # Part 1: vraag 3
-print('\n')
-print(report) # Part 1: vraag 4
+
+print('Elaboration part 1 - question 4:\n')
+print('Below is a string containing a short report about who scored when in the match with use of the \'f-string\':\n')
+print(report)
 print('\n')
 
 # #Part 2
-print(player) # Part 2: vraag 1
+print('Elaboration part 2 - question 1:\n')
+print('Below is the player I chose for this question:\n')
+print(player)
 print('\n')
-print(first_name) # Part 2: vraag 2
+
+print('Elaboration part 2 - question 2:\n')
+print('Below is the isolated first name of the player with the use of \'slicing\' and the \'.find\' function:\n')
+print(first_name)
 print('\n')
-# print(first_name_2) # Part 2: vraag 3
-print('\n')
+
+print('Elaboration part 2 - question 3:\n')
+print('Below is the length of the player\'s surname with the use of len():\n')
 print(last_name_len)
 print('\n')
-print(name_short) # Part 2: vraag 4
+
+print('Elaboration part 2 - question 4:\n')
+print('Below are the isolated and stored initial and surname of the player:\n')
+print(name_short)
 print('\n')
-print(chant) # Part 2: vraag 5
+
+print('Elaboration part 2 - question 5:\n')
+print('Below is the number of chants equal to the number of characters in the player\'s first name and without the space behind the exclamation mark (!):\n')
+print(chant)
 print('\n')
-# print(chant_2)
-# print(chant_3)
-print(good_chant) # Part 2: vraag 6
+
+print('Elaboration part 2 - question 6:\n')
+print('Below is the boolean check to make sure that the last character of the chant isn\'t a space:\n')
+print(good_chant)
+print('\n')
