@@ -1,7 +1,7 @@
 # Programming_skills
 
 **Preface**
-Below are the exercises I have done so far during this education. I have expanded the elaboration of all exercises so that it becomes more clear what my code does. For example, I have added all questions to my code and I have tried to clearly indicate in the output which output belongs to which question. This way it becomes more clear in the output what my code does exactly.
+Below are the exercises I have done so far during the Back-end Python Developer education. I have expanded the elaboration of all exercises so that it becomes more clear what my code does. For example, I have added all the questions from the exercise to my code and I have tried to clearly indicate in the output which output belongs to which question. This way it becomes more clear in the output what my code does exactly.
 
 Furthermore I want to specify that I always try to write my code as universally as possible. This allows my code to be used for multiple situations / requests. Enjoy reading.
 
