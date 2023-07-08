@@ -59,7 +59,7 @@ print(won_golden_globe('Jaws'))
 # print('\n')
 
 
-# Question 3 = Write a function that returns a tidy list which only contains Golden Globe movie music composed by John Williams without using a for loop.\
+# Question 3 = Write a function that returns a tidy list which only contains Golden Globe movie music composed by John Williams, without using a for loop.\
 # But I created 2 tidy lists instead: 1 for John Williams and 1 for TOTO.😉
 
 tidy_list_John = ['Jaws', 'Star Wars: Episode iv -- A New Hope', 'E.T. The Extra-Terrestrial', 'Memoirs of a Geisha', 'Fahrenheit',\
@@ -72,7 +72,7 @@ def remove_toto_albums(tidy_list_John, tidy_list_TOTO) -> list:
     
     print('Elaboration question 3:\n')
 
-    print('Even though the question was to write a function for 1 tidy list, I wrote a function that returns 2 tidy lists instead😉: 1 for John Williams and 1 for TOTO:\n')
+    print('Even though the question was to write a function that returns 1 tidy list, I wrote a function that returns 2 tidy lists instead😉: 1 for John Williams and 1 for TOTO:\n')
 
     if 'Fahrenheit' in tidy_list_John:
         tidy_list_John.remove('Fahrenheit')
@@ -107,5 +107,5 @@ tidy_list_John = tidy_lists[0]
 tidy_list_TOTO = tidy_lists[1]
 
 print('- Tidy list John Williams =', tidy_list_John, '\n')
-# print('\n')
+
 print('- Tidy list TOTO =',tidy_list_TOTO, '\n')

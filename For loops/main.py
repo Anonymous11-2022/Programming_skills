@@ -15,19 +15,19 @@ For all 3 exercises shown below, I used the countries list from the 'countries.j
 '''
 
 
-# Question 1 = Write a function that returns all the countries with the shortest country names / fewest characters.
+# Question 1 = Write a function that returns all the countries with the shortest names / fewest characters.
 
 def shortest_names (coutries: list) -> list:
     
     print('Elaboration question 1:\n')
     
     shortest_country_name = min(coutries, key=len)
-    print(f'{shortest_country_name} = the country name with the fewest characters.\n')
+    print(f'{shortest_country_name} = the country name with the shortest name / fewest characters.\n')
 
     total_characters = len(shortest_country_name)
-    print(f'{total_characters} = total characters of the country name with the fewest characters.\n')
+    print(f'{total_characters} = the total characters of the country with the shortest name / fewest characters.\n')
     
-    print('Below are all the countries with the shortest name / fewest characters from the \'countries\' list:\n')
+    print('Below are all the countries with the shortest names / fewest characters from the \'countries\' list:\n')
     shortest_country_list = []
 
     for country in coutries:
@@ -62,7 +62,7 @@ def most_vowels (countries: list) -> list:
 
     ranking_vowels.sort(reverse = True)
 
-    print('Below is a list with the number of vowels in a country name including the country name. The list is sorted by the amount of vowels: from most vowels to fewest vowels.\n')
+    print('Below is a list with the total number of vowels in a country name, including the country name. The list is sorted by the total amount of vowels: from most vowels to fewest vowels.\n')
     
     print(ranking_vowels)
     print('\n')

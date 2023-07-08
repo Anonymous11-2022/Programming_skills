@@ -9,19 +9,19 @@ The function shown below helps a farmer to decide what to do:
 - during what season;
 - during what time of the day;
 - with the location of the cows;
-- regarding mowing the grass
-- with the slurry tank
-- with a combination of all or several of the above situations
+- regarding mowing the grass;
+- with the slurry tank;
+- with a combination of all or several of the above situations.
 '''
 
 print('\n')
 
 def farm_action(
-        weather, # (rainy, sunny, windy, neutral)
-        time_of_day, # (day, night)
+        weather, # (rainy, sunny, windy, or neutral)
+        time_of_day, # (day or night)
         cow_milking_status, # (Need milking = True, Don't need milking = False)
-        location_of_the_cows, # (pasture, cowshed)
-        season, # (winter, spring, summer, fall)
+        location_of_the_cows, # (pasture or cowshed)
+        season, # (winter, spring, summer or fall (like the song: You've Got A Friend, from Carole King.😉
         slurry_tank, # (Full = True, Not full = False)
         grass_status) -> str: # (Long = True, Short = False)
 
@@ -56,11 +56,18 @@ def farm_action(
     
     return action
 
+print('Below is 1 of the multiple situations in which a farmer can end up in:\n')
+
 print(farm_action('sunny','day', True, 'pasture', 'spring', False, True,))
 
 '''
-Below you can also select several scenario’s to check what the
-output will be after uncommenting one of the lines / scenario’s and run this code.
+Below you can also select several scenario\'s to check what the
+output will be. You'll just have to:
+
+- uncomment the line you want to select and;
+- run my code.
+
+Go wild with selecting several scenario's!
 '''
 
 # print(farm_action('rainy', "night", False, 'pasture', 'spring', False, True))
