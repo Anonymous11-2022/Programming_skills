@@ -5,6 +5,8 @@ Below are the exercises I have done so far during the Back-end Python Developer 
 
 Furthermore I want to specify that I always try to write my code as universally as possible. This allows my code to be used for multiple situations / requests. Enjoy reading.
 
+P.S. I've made up the names for the exercises myself.😉
+
 
 **Exercise – Conditions:**
 
