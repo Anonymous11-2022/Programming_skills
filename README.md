@@ -10,7 +10,7 @@ Enjoy reading.
 P.S. I've made up the a.k.a. names for the exercises myself.😉
 
 
-**Exercise: Conditions a.k.a. "Old MacDonald had a farm"**
+**Exercise: Conditions a.k.a. "Old MacDonald had a farm... action"**
 
 **What does this code do?**
 This code helps farmers decide what to do in certain situations by only using: 1 ‘function’, the ‘if’ and ‘elif’ statements and several ‘operators’. A few examples of certain situations are:
