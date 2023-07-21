@@ -13,25 +13,25 @@ For this exercise I had to use the following website to find the necessary info:
 
 # Part 1 - question 1 = Create a variable for every player that scored.
 
-scorer1 = '- Ruud Gullit'
-scorer2 = '- Marco van Basten'
+scorer_1 = '- Ruud Gullit'
+scorer_2 = '- Marco van Basten'
 
 
 # Part 1 - question 2 = Create a variable for each minute of the match that a goal was scored in.
 
-goal_0 = 32
-goal_1 = 54
+goal_1 = 32
+goal_2 = 54
 
 
 # Part 1 - question 3 = Create a variable that stores a string that reports on who scored when \
 # using the '+' operator to concatenate the variables and cast those whose datatypes are numbers into strings.
 
-scorers = scorer1 + ' ' + str(goal_0) + ', ' + scorer2 + ' ' + str(goal_1)
+scorers = scorer_1 + ' ' + str(goal_1) + ' ' + scorer_2 + ' ' + str(goal_2)
 
 
 # Part 1 - question 4 = Create a variable which will store a single string of information about who scored when during the match.
 
-report = (F'{scorer1} scored in the {goal_0}nd minute\n{scorer2} scored in the {goal_1}th minute')
+report = (F'{scorer_1} scored in the {goal_1}nd minute\n{scorer_2} scored in the {goal_2}th minute')
 
 
 # Part 2 - question 1 = Choose a player's name and store it as a string.
@@ -70,17 +70,17 @@ good_chant = (chant[-1] != ' ')
 print('\n')
 # Part 1
 print('Elaboration part 1 - question 1:\n')
-print('Below are the players I selected from the UEFA Euro 1988 final:\n')
-print(scorer1)
-print(scorer2, '\n')
+print('Below are the players who scored during the UEFA Euro 1988 final:\n')
+print(scorer_1)
+print(scorer_2, '\n')
 
 print('Elaboration part 1 - question 2:\n')
 print('Below are the minutes of the match that a goal was scored in:\n')
-print('-', goal_0)
-print('-', goal_1, '\n')
+print('-', goal_1)
+print('-', goal_2, '\n')
 
 print('Elaboration part 1 - question 3:\n')
-print('Below is a string containing the name of the player followed by the minute the player scored during the match:\n')
+print('Below is a string containing the name of the player followed by the minute the player scored during the match using only the \'+ operator\':\n')
 print(scorers, '\n')
 
 print('Elaboration part 1 - question 4:\n')
@@ -97,17 +97,18 @@ print('Below is the isolated first name of the player with the use of \'slicing\
 print('-', first_name, '\n')
 
 print('Elaboration part 2 - question 3:\n')
-print('Below is the length of the player\'s surname with the use of len():\n')
-print('- Player\'s surname =', last_name_len, 'long.' '\n')
+print('Below is the length of the player\'s surname with the use of \'len()\':\n')
+print('- Player\'s surname =', last_name_len, 'characters long.' '\n')
 
 print('Elaboration part 2 - question 4:\n')
-print('Below are the isolated and stored initial and surname of the player:\n')
+print('Below are the isolated and stored initial and surname of the player using indexes, the \'plus operator\' and \'.find\' function:\n')
 print('-', name_short, '\n')
 
 print('Elaboration part 2 - question 5:\n')
-print('Below is the number of chants equal to the number of characters in the player\'s first name and without the space behind the exclamation mark (!):\n')
+print('Below is the number of chants equal to the number of characters in the player\'s first name and without the space behind the exclamation mark (!) \
+using the \'F string\', \'len()\' and an \'index\':\n')
 print('-', chant, '\n')
 
 print('Elaboration part 2 - question 6:\n')
-print('Below is the boolean check to make sure that the last character of the chant isn\'t a space:\n')
+print('Below is the boolean check to make sure that the last character of the chant isn\'t a space with the use of a \'boolan\' and an \'index\':\n')
 print('- What is your answer to the following question: "Is the last character of the chant not a space? The answer =' ,good_chant, '\n')
