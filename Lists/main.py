@@ -3,7 +3,7 @@ __winc_id__ = '6eb355e1a60f48a28a0bbbd0c88d9ab4'
 __human_name__ = 'lists'
 
 
-# Exercise: "Organize movies and songs" (using functions and lists).
+# Exercise: Lists a.k.a. "Let’s binge and roll" (using functions and lists).
 
 '''
 For this exercise I had to use the following websites to find the necessary movies and songs:
@@ -56,7 +56,6 @@ def won_golden_globe(movies: str) -> bool:
         return False
         
 print(won_golden_globe('Jaws'))
-# print('\n')
 
 
 # Question 3 = Write a function that returns a tidy list which only contains Golden Globe movie music composed by John Williams, without using a for loop.\

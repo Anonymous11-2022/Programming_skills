@@ -6,7 +6,7 @@ tests it runs. """
 __winc_id__ = "c545bc87620d4ced81cbddb8a90b4a51"
 __human_name__ = "for"
 
-# Exercise: "Experiment with countries" (using functions, lists and for loops).
+# Exercise: For loops a.k.a. "Knowing your abc’s" (using functions, lists and for loops).
 
 print('\n')
 
@@ -84,7 +84,7 @@ def alphabet_set(countries: list) -> list:
 
     alphabet = list('abcdefghijklmnopqrstuvwxyz')
         
-    print('Below is the alphabet in an iterable list:\n')
+    print('Below is the standard alphabet in an iterable list:\n')
     
     print(alphabet)
     

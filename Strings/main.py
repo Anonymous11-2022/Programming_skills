@@ -2,7 +2,7 @@
 __winc_id__ = '71dd124b4a6e4d268f5973db521394ee'
 __human_name__ = 'strings'
 
-# Exercise: "Soccer on a string"😉 (using operators, casting and strings).
+# Exercise: strings a.k.a. "Soccer on a string"😉 (using operators, casting and strings).
 
 '''
 For this exercise I had to use the following website to find the necessary info:

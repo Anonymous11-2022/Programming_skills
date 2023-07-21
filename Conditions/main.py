@@ -2,7 +2,7 @@
 __winc_id__ = '25596924dffe436da9034d43d0af6791'
 __human_name__ = 'conditions'
 
-# Exercise: "Help the farmer" (using conditions and operators).
+# Exercise: Conditions a.k.a. "Old MacDonald had a farm" (using conditions and operators).
 
 '''
 The function shown below helps a farmer to decide what to do:
@@ -61,7 +61,7 @@ print('Below is 1 of the multiple situations in which a farmer can end up in:\n'
 print(farm_action('sunny','day', True, 'pasture', 'spring', False, True,))
 
 '''
-Below you can also select several scenario\'s to check what the
+Below you can also select several scenario's to check what the
 output will be. You'll just have to:
 
 - uncomment the line you want to select and;
