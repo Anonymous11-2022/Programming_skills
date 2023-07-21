@@ -2,7 +2,7 @@
 __winc_id__ = '25596924dffe436da9034d43d0af6791'
 __human_name__ = 'conditions'
 
-# Exercise: Conditions a.k.a. "Old MacDonald had a farm" (using conditions and operators).
+# Exercise: Conditions a.k.a. "Old MacDonald had a farm... action" (using conditions and operators).
 
 '''
 The function shown below helps a farmer to decide what to do:
