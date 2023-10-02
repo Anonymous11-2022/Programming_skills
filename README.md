@@ -53,7 +53,7 @@ For help with this code, you can contact me.
 The person who maintains and contributes to this code, is me.
 
 
-**Exercise: Lists a.k.a. "Let’s binge and roll"**
+**Exercise: Functions a.k.a. "Let’s binge and roll"**
 
 **What does this code do?**
 This code helps to tidy up lists by sorting them and checking them to make sure that they stay tidy.
